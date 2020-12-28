@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous">
+    </script>
+    <!-- Custom Style -->
+	  <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+
+	  <!-- Google Font -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" >
+
+	  <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+          crossorigin="anonymous">
+
+  	<title>DOM Manipulation</title>
+
+       
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Item</label>
+        <input id="new-task" type="text"><button class="btn btn-success">Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"> <label>Pay Bills</label>
+            <input type="text"> <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </li>
+        <li><input type="checkbox"><label>Go Shopping</label>
+            <input type="text"><button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </li>
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked>
+            <label>See the Doctor</label>
+            <input type="text"><button class="edit">Edit</button>
+            <button class="delete">Delete</button></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="assets/scripts/app.js"></script>
+
+  </body>
+</html>
